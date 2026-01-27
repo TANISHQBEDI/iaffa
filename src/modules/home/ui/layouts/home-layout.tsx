@@ -1,8 +1,8 @@
 import React from 'react'
 
-const HomeLayout = ({ children, className }: { children: React.ReactNode, className?: string }) => {
+const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className={`min-h-screen -mt-20 bg-background ${className}`}>
+    <div className={`min-h-screen bg-background `}>
         {children}
     </div>
   )

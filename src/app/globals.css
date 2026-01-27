@@ -129,3 +129,41 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .heading-1 {
+    @apply text-5xl lg:text-6xl font-bold leading-tight;
+  }
+  
+  .heading-2 {
+    @apply text-4xl lg:text-5xl font-bold leading-tight;
+  }
+  
+  .heading-3 {
+    @apply text-3xl lg:text-4xl font-semibold leading-snug;
+  }
+  
+  .heading-4 {
+    @apply text-2xl lg:text-3xl font-semibold leading-snug;
+  }
+  
+  .heading-5 {
+    @apply text-xl lg:text-2xl font-semibold;
+  }
+  
+  .heading-6 {
+    @apply text-lg lg:text-xl font-semibold;
+  }
+  
+  .body-text {
+    @apply text-base leading-relaxed;
+  }
+  
+  .body-text-lg {
+    @apply text-lg leading-relaxed;
+  }
+  
+  .body-text-sm {
+    @apply text-sm leading-relaxed;
+  }
+}
