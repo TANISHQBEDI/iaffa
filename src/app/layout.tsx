@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Serif_Hentaigana } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/header/nav";
 
@@ -10,6 +10,9 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+const notoSerifHentaigana = Noto_Serif_Hentaigana({
   subsets: ["latin"],
 });
 
@@ -26,9 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
+        className={`${notoSerifHentaigana.className} antialiased relative`}
       >
-        <Nav />
+        <div className='z-90'>
+          <Nav />
+        </div>
         {children}
       </body>
     </html>
