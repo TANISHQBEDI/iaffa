@@ -21,8 +21,8 @@ export const NAV_ITEMS: NAV_ITEM[] = [
     },
     {
         id: '03',
-        label: 'Prize',
-        href: '/prize',
+        label: 'Prizes',
+        href: '/prizes',
         active: true
     },
     {

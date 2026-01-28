@@ -167,3 +167,40 @@
     @apply text-sm leading-relaxed;
   }
 }
+
+.programs {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(200px, 1fr));
+  grid-template-areas: 
+    "item1 item2 item3"
+    "item1 item4 item4"
+    "item5 item5 item6";
+}
+
+/* Tablet (medium screens) */
+@media (max-width: 1024px) {
+  .programs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, minmax(180px, 1fr));
+    grid-template-areas: 
+      "item1 item2"
+      "item1 item3"
+      "item4 item5"
+      "item6 item5";
+  }
+}
+
+/* Mobile (small screens) */
+@media (max-width: 640px) {
+  .programs {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6";
+  }
+}
