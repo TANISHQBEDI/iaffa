@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 
 const ProgramHighlights = () => {
   return (
-    <div className='min-h-screen w-full container mx-auto flex flex-col gap-8 items-center justify-center py-20 px-5'>
+    <div className=' w-full container mx-auto flex flex-col gap-8 items-center justify-center py-20 px-5'>
       <h1 className='heading-1'>Program Highlights</h1>
       <div className='w-full h-full grid programs gap-4'>
         {PROGRAM_HIGHLIGHTS.map((program) => (
